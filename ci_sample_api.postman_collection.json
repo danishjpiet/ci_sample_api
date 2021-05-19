@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "8cb77d3a-fc46-46e9-8a18-abeafb41c7e4",
+		"name": "ci_sample_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesskey",
+						"value": "G3448R10at9mD3209etRA20d8iNgla3p",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_mobile\" : \"8791464245\",\r\n\"user_type\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/ci_sample_api/Account/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ci_sample_api",
+						"Account",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verifyOtp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesskey",
+						"value": "G3448R10at9mD3209etRA20d8iNgla3p",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"user_id\" : \"521\",\r\n\"user_type\" : \"1\",\r\n\"otp\" : \"7504\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/ci_sample_api/Account/verifyOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ci_sample_api",
+						"Account",
+						"verifyOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProfilePic",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesskey",
+						"value": "G3448R10at9mD3209etRA20d8iNgla3p",
+						"type": "text"
+					},
+					{
+						"key": "jwt_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNTIxIiwidXNlcl90eXBlIjoiMSJ9.GnSSKXTTV3EF4ajqoJ6hR0EI6gVylUBoQd9a_7R1Zj4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profilePic",
+							"type": "file",
+							"src": "/C:/Users/Public/Pictures/Sample Pictures/Tulips.jpg"
+						},
+						{
+							"key": "user_id",
+							"value": "521",
+							"type": "text"
+						},
+						{
+							"key": "user_type",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/ci_sample_api/Users/updateProfilePic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ci_sample_api",
+						"Users",
+						"updateProfilePic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesskey",
+						"value": "G3448R10at9mD3209etRA20d8iNgla3p",
+						"type": "text"
+					},
+					{
+						"key": "jwt_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNTIxIiwidXNlcl90eXBlIjoiMSJ9.GnSSKXTTV3EF4ajqoJ6hR0EI6gVylUBoQd9a_7R1Zj4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"user_id\" : \"521\",\r\n\"user_type\" : \"1\",\r\n\"about\" : \"\",\r\n\"name\" : \"d s\",\r\n\"email\" : \"\",\r\n\"location\" : \"\",\r\n\"age\" : \"\",\r\n\"gender\" : \"\",\r\n\"bank\" : \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/ci_sample_api/Users/updateProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ci_sample_api",
+						"Users",
+						"updateProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesskey",
+						"value": "G3448R10at9mD3209etRA20d8iNgla3p",
+						"type": "text"
+					},
+					{
+						"key": "jwt_token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNTIxIiwidXNlcl90eXBlIjoiMSJ9.GnSSKXTTV3EF4ajqoJ6hR0EI6gVylUBoQd9a_7R1Zj4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"user_id\" : \"521\",\r\n\"user_type\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/ci_sample_api/Users/getProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ci_sample_api",
+						"Users",
+						"getProfile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
